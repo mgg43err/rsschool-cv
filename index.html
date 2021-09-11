@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap"
+			rel="stylesheet"
+		/>
 		<link
 			rel="stylesheet"
 			href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
 		/>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-		<script>
+		<script class="hljs">
 			hljs.initHighlightingOnLoad();
 		</script>
 		<meta charset="UTF-8" />
@@ -16,76 +22,154 @@
 	</head>
 
 	<body>
-		<header>
-			<h1>Andrey Pleskunou CV</h1>
-			<img
-				class="img"
-				src="./POfK0W47zR.jpg"
-				alt="My photo have to be here!"
-				width="150"
-				height="150"
-			/>
-			<h2><b>Andrey Pleskunou</b></h2>
-		</header>
+		<div class="wrapper">
+			<div class="navigation-menu">
+				<nav>
+					<ul>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#personal">Personal</a></li>
+						<li><a href="#project">Projects</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#goal">Goal</a></li>
+						<li><a href="#exp">Experience</a></li>
+						<li><a href="#code">Code</a></li>
+						<li><a href="#eng">English</a></li>
+					</ul>
+				</nav>
+			</div>
+			<header>
+				<h1>Andrey Pleskunou CV</h1>
+				<img
+					class="img"
+					src="./POfK0W47zR.jpg"
+					alt="My photo have to be here!"
+					width="150"
+					height="150"
+				/>
+				<h2><b>Andrey Pleskunou</b></h2>
+				<article id="skills">
+					<h4>Skills:</h4>
+					<ul>
+						<li
+							>JavaScript + platforms (Node(OS, Path, fs ...), Browser) +
+							library React
+						</li>
+						<li>HTML5</li>
+						<li>CSS + CSS preprocessors (SASS/SCSS)</li>
+						<li>Scripting languages Python/Bash</li>
+						<li>Databases (PostgreSQL)</li>
+						<li>
+							System for version control and it's web servers git and (GitHub,
+							GitLab)</li
+						>
+					</ul>
+				</article>
+				<article id="personal">
+					<h4>Personal information:</h4>
+					<ul>
+						<li><a href="tel:+375256419982">+375256419982</a></li>
+						<li><a href="mailto:mgg43er@gmail.com">mgg43er@gmail.com</a></li>
+						<li
+							><a href="https://www.linkedin.com/in/andrey-pleskunou-41a929186/"
+								>LinkedIn</a
+							></li
+						>
+						<li>
+							<a href="https://github.com/mgg43err">Github</a>
+						</li>
+						<li>
+							<a href="https://www.codewars.com/users/Unixfscker">Codewars</a>
+						</li>
+					</ul>
+				</article>
+				<article id="project">
+					<h4> Example of projects: </h4>
+					<ul>
+						<a
+							href="https://determined-franklin-2237ca.netlify.app/"
+							target="_blank"
+							><img
+								src="./assets/img/momentum.png"
+								alt="momentum"
+								width="200"
+								height="100"
+							/>
 
-		<main>
-			<article>
-				<h4>About myself:</h4>
-				<p
-					>Hi there! I am a BSU graduate. I'm 21. Not married. Studying
-					JavaScript in order to enter web development. I was made some
-					projects. Еhe best of them are presented
-					<a href="#project">here</a>.</p
-				>
-			</article>
+							Momentum</a
+						>
+						<a
+							href="https://rolling-scopes-school.github.io/mgg43err-JSFEPRESCHOOL/verical-slider/"
+							target="_blank"
+						>
+							<img
+								src="./assets/img/vertical-slider.png"
+								alt="verical-slider"
+								width="200"
+								height="100"
+							/>
+							Vertical slider</a
+						>
+						<a href="https://mgg43err.github.io/wildlife/" target="_blank">
+							<img
+								src="./assets/img/wildlife.png"
+								alt="wildlife"
+								width="200"
+								height="100"
+							/>
+							Wildlife</a
+						>
+					</ul>
+				</article>
+			</header>
 
-			<article>
-				<h4>Personal information:</h4>
-				<ul>
-					<li><a href="tel:+375256419982">+375256419982</a></li>
-					<li><a href="mailto:mgg43er@gmail.com">mgg43er@gmail.com</a></li>
-					<li
-						><a href="https://www.linkedin.com/in/andrey-pleskunou-41a929186/"
-							>https://www.linkedin.com/in/andrey-pleskunou-41a929186/</a
-						></li
+			<main>
+				<section id="about">
+					<h4>About myself:</h4>
+					<p
+						>Hi there! I am a BSU graduate. I'm 21. Not married. Studying
+						JavaScript in order to enter web development. I was made some
+						projects. Еhe best of them are presented
+						<a href="#project">here</a>.</p
 					>
-				</ul>
-			</article>
+				</section>
 
-			<article>
-				<h4>Goal:</h4>
-				<p
-					>My goal is to get a job offer in frontend and find myself in
-					web-development.</p
-				>
-				<p
-					>I am learning web-development with good speed and that inspire
-					myself.</p
-				>
-			</article>
+				<article id="goal">
+					<h4>Goal:</h4>
+					<p
+						>My goal is to get a job offer in frontend and find myself in
+						web-development.</p
+					>
+					<p
+						>I am learning web-development with good speed and that inspire
+						myself.</p
+					>
+				</article>
 
-			<article>
-				<h4>Skills:</h4>
-				<ul>
-					<li>JavaScript (ES5, ES6, ES7)</li>
-					<li>React.js</li>
-					<li>Node.js</li>
-					<li>HTML/CSS</li>
-					<li>SASS/SCSS</li>
-					<li>Visual Studio code</li>
-					<li>Python</li>
-					<li>Bash</li>
-					<li>PostgreSQL</li>
-					<li>Git, GitHub, GitLab</li>
-				</ul>
-			</article>
+				<section id="exp">
+					<h4>Experience:</h4>
+					<p
+						>Experienced with JavaScript, HTML5, CSS3, SASS in the Rolling
+						Scopes course. I passed the autotests of this course, and also
+						completed the tasks on codewars. Also I had experience with
+						Javascript on Hexlet and Stepik platforms.</p
+					>
+				</section>
 
-			<article>
-				<h4> Example slice of code: </h4>
-			</article>
+				<article id="eng">
+					<h4>English level:</h4>
+					<p
+						>I can speak and write with rare mistakes also have a good listening
+						understanding. I can read technical text with a dictionary.Probably
+						intermediate(B1).</p
+					>
+				</article>
 
-			<aside>
-				<pre><code class="javascript">
+				<article id="code">
+					<h4> Example slice of code: </h4>
+				</article>
+
+				<aside>
+					<pre><code class="javascript">
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement) {
         this.previousOperandTextElement = previousOperandTextElement;
@@ -151,34 +235,12 @@ class Calculator {
         }
     }
         </code></pre>
-			</aside>
+				</aside>
+			</main>
 
-			<article id="project">
-				<h4> Example of project: </h4>
-				<a href="https://determined-franklin-2237ca.netlify.app/">Momentum</a>
-			</article>
-			<article>
-				<h4>Experience:</h4>
-				<p
-					>Experienced with JavaScript, HTML5, CSS3, SASS in the Rolling Scopes
-					course. I passed the autotests of this course, and also completed the
-					tasks on codewars. Also I had experience with Javascript on Hexlet and
-					Stepik platforms.</p
-				>
-			</article>
-
-			<article>
-				<h4>English level:</h4>
-				<p
-					>I can speak and write with rare mistakes also have a good listening
-					understanding. I can read technical text with a dictionary.Probably
-					intermediate(B1).</p
-				>
-			</article>
-		</main>
-
-		<footer>
-			<p>Thanks to your attention!</p>
-		</footer>
+			<footer>
+				<p>Thanks to your attention!</p>
+			</footer>
+		</div>
 	</body>
 </html>
