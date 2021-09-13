@@ -65,7 +65,7 @@ main {
 	grid-area: main;
 	background: #aadcff;
 	border-radius: 9px;
-	padding: 16px;
+	padding: 16px 16px 0px 16px;
 }
 
 footer {
@@ -73,6 +73,9 @@ footer {
 	grid-area: footer;
 	align-self: center;
 	justify-content: center;
+	background: rgb(170 220 255);
+	border-radius: 15px;
+	height: 85px;
 }
 .navigation-menu {
 	display: grid;
@@ -118,6 +121,7 @@ footer {
 	margin: auto 150px;
 	padding-top: 30px;
 	grid-column-gap: 25px;
+	grid-row-gap: 20px;
 }
 
 p {
@@ -135,4 +139,36 @@ ul {
 }
 #personal > ul {
 	line-height: 25px;
+}
+
+.hljs {
+	background: #000000;
+	color: #d6efff;
+}
+.links {
+	width: 1400px;
+	display: flex;
+	height: 85px;
+	align-items: center;
+	justify-content: end;
+}
+
+.links > ul {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+.link {
+	margin: 10px;
+}
+.s-network {
+	width: 40px;
+	height: 50px;
+}
+.linkedin:hover {
+	fill: #005bab;
+}
+.github:hover {
+	fill: #ecb040;
 }
