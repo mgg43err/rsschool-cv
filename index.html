@@ -4,7 +4,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" >
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
 		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&amp;display=swap"
 			rel="stylesheet"
 		>
 		<link
@@ -158,7 +158,7 @@
 					<section id="goal">
 					<h4>Goal:</h4>
 					<p
-						>My goal is to get a job offer and drink milk in frontend and find myself in
+					>My goal is to get a job offer and drink milk in frontend and find myself in
 						web-development.</p
 					>
 					<p
@@ -198,7 +198,7 @@ function calculateRoverPath(map) {
 	let path = [`[0][0]->`];
 	let fuelArr = [map[mO][nO]];
 
-	while (mO &lt; m && nO &lt; n) {
+	while (mO &lt; m &amp;&amp; nO &lt; n) {
 		if (
 			Math.min(
 				Math.abs(map[mO][nO] - map[mO][nO + 1]),
@@ -299,39 +299,31 @@ function calculateRoverPath(map) {
 		pathAngular2.push(`[${m02}][${n02}]-`);
 		m02++;
 	}
-
 	while (n02 &lt; n + 1) {
 		angularPath2.push(map[m02][n02]);
 		pathAngular2.push(`[${m02}][${n02}]->`);
 		n02++;
 	}
-
 	pathAngular2 = pathAngular2.join().replace(/,/g, "");
 	let fuelAngular2 = angularPath2.length - 1;
 	for (let i = 0; i &lt; angularPath2.length - 1; i++) {
 		fuelAngular2 += Math.abs(angularPath2[i] - angularPath2[i + 1]);
 	}
-
 	if (fuelAngular &lt; fuel) {
 		roverPath.fuel = fuelAngular;
 		roverPath.steps = angularSteps;
 		roverPath.path = pathAngular;
 	}
-
 	if (fuelAngular2 &lt; fuelAngular) {
 		roverPath.fuel = fuelAngular2;
 		roverPath.steps = angularSteps2;
 		roverPath.path = pathAngular2;
 	}
-
 	return roverPath;
 }
-
 module.exports = {
 	calculateRoverPath,
-};
-
-        </code></pre>
+};</code></pre>
 					</section>
 				</article>
 			</main>
