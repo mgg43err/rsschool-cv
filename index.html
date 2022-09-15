@@ -198,12 +198,12 @@ function calculateRoverPath(map) {
 	let path = [`[0][0]->`];
 	let fuelArr = [map[mO][nO]];
 
-	while (mO &lt; m && nO &lt; n) {
+	while (mO &lt; m &amp;&amp; nO &lt; n) {
 		if (
 			Math.min(
 				Math.abs(map[mO][nO] - map[mO][nO + 1]),
 				Math.abs(map[mO][nO] - map[mO + 1][nO])
-			) === Math.abs(map[mO][nO + 1] - map[mO][nO]) &&
+			) === Math.abs(map[mO][nO + 1] - map[mO][nO]) &amp;&amp;
 			Math.min(
 				Math.abs(map[mO][nO] - map[mO][nO + 1]),
 				Math.abs(map[mO][nO] - map[mO + 1][nO])
