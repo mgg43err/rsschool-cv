@@ -198,7 +198,7 @@ function calculateRoverPath(map) {
 	let path = [`[0][0]->`];
 	let fuelArr = [map[mO][nO]];
 
-	while (mO < m && nO < n) {
+	while (mO &lt; m && nO &lt; n) {
 		if (
 			Math.min(
 				Math.abs(map[mO][nO] - map[mO][nO + 1]),
@@ -246,7 +246,7 @@ function calculateRoverPath(map) {
 	let steps = path.length - 1;
 	let fuel = path.length - 1;
 
-	for (let i = 0; i < fuelArr.length - 1; i++) {
+	for (let i = 0; i &lt; fuelArr.length - 1; i++) {
 		fuel += Math.abs(fuelArr[i] - fuelArr[i + 1]);
 	}
 
@@ -270,13 +270,13 @@ function calculateRoverPath(map) {
 	let n0 = 0;
 	let pathAngular = [];
 
-	while (n0 < n) {
+	while (n0 &lt; n) {
 		angularPath.push(map[m0][n0]);
 		pathAngular.push(`[${m0}][${n0}]->`);
 		n0++;
 	}
 
-	while (m0 < m + 1) {
+	while (m0 &lt; m + 1) {
 		angularPath.push(map[m0][n0]);
 		pathAngular.push(`[${m0}][${n0}]->`);
 		m0++;
@@ -284,7 +284,7 @@ function calculateRoverPath(map) {
 
 	pathAngular = pathAngular.join().replace(/,/g, "");
 	let fuelAngular = angularPath.length - 1;
-	for (let i = 0; i < angularPath.length - 1; i++) {
+	for (let i = 0; i &lt; angularPath.length - 1; i++) {
 		fuelAngular += Math.abs(angularPath[i] - angularPath[i + 1]);
 	}
 
@@ -294,13 +294,13 @@ function calculateRoverPath(map) {
 	let n02 = 0;
 	let pathAngular2 = [];
 
-	while (m02 < m) {
+	while (m02 &lt; m) {
 		angularPath2.push(map[m02][n02]);
-		pathAngular2.push(`[${m02}][${n02}]->`);
+		pathAngular2.push(`[${m02}][${n02}]-`);
 		m02++;
 	}
 
-	while (n02 < n + 1) {
+	while (n02 &lt; n + 1) {
 		angularPath2.push(map[m02][n02]);
 		pathAngular2.push(`[${m02}][${n02}]->`);
 		n02++;
@@ -308,17 +308,17 @@ function calculateRoverPath(map) {
 
 	pathAngular2 = pathAngular2.join().replace(/,/g, "");
 	let fuelAngular2 = angularPath2.length - 1;
-	for (let i = 0; i < angularPath2.length - 1; i++) {
+	for (let i = 0; i &lt; angularPath2.length - 1; i++) {
 		fuelAngular2 += Math.abs(angularPath2[i] - angularPath2[i + 1]);
 	}
 
-	if (fuelAngular < fuel) {
+	if (fuelAngular &lt; fuel) {
 		roverPath.fuel = fuelAngular;
 		roverPath.steps = angularSteps;
 		roverPath.path = pathAngular;
 	}
 
-	if (fuelAngular2 < fuelAngular) {
+	if (fuelAngular2 &lt; fuelAngular) {
 		roverPath.fuel = fuelAngular2;
 		roverPath.steps = angularSteps2;
 		roverPath.path = pathAngular2;
