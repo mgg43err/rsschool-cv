@@ -15,7 +15,8 @@ body {
 		"nav nav"
 		"header main"
 		"footer footer";
-	margin: auto 150px;
+	margin: 0 auto;
+	width: 80%;
 	padding-top: 30px;
 	grid-column-gap: 25px;
 	grid-row-gap: 20px;
@@ -178,5 +179,12 @@ footer {
 			"main"
 			"footer";
 		margin: 0 0;
+		
+	}
+	header{
+		width: 99%;
+	}
+	header > .img {
+		margin-left: 0%;
 	}
 }
