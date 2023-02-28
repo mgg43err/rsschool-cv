@@ -44,10 +44,13 @@ a {
 a:hover {
 	text-decoration: underline;
 }
-.navigation-menu > nav {
+nav {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row-reverse;
 }
-.navigation-menu > nav > ul {
+nav > ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -55,13 +58,14 @@ a:hover {
 	width: 100%;
 	padding: 0;
 	margin: 0;
+	padding-top: 30px;
 }
-.navigation-menu > nav > ul > li > a {
+nav > ul > li > a {
 	padding: 17px;
 	background: #cbeaff;
 	border-radius: 15px;
 }
-.navigation-menu > nav > ul > li > a:hover {
+nav > ul > li > a:hover {
 	background-color: rgb(166, 166, 255);
 	padding: 19px;
 }
@@ -162,7 +166,7 @@ footer {
 	fill: #005bab;
 }
 .github:hover {
-	fill: #ecb040;
+	fill: #e9d2a7;
 }
 .codewars:hover {
 	fill: #a30000;
@@ -179,12 +183,17 @@ footer {
 			"main"
 			"footer";
 		margin: 0 0;
-		
 	}
-	header{
+	header {
 		width: 99%;
 	}
 	header > .img {
 		margin-left: 0%;
+	}
+}
+
+@media all and (max-width: 800px) {
+	.navigation-menu > .hamburger-menu > nav > ul {
+		visibility: hidden;
 	}
 }
